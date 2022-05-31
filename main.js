@@ -2,6 +2,22 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
+const likeHearts = document.querySelectorAll('like-glyph').addEventListener
+
+function likeAction(e) {
+  const heart = e.target
+  mimicServerCall()
+  heart.innerText = glyphStates[heart.innerText];
+      heart.style.color = colorStates[heart.style.color];
+      for (const glyph of articleHearts) {
+        glyph.addEventListener("click", likeCallback);
+      }
+    }
+
+// element.addEventListener("click", myFunction);
+// function myFunction() {
+//   document.getElementsByClassName("like-glyph")
+// }
 // Your JavaScript code goes here!
 
 
